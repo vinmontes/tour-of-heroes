@@ -26,7 +26,7 @@
 
       // other libraries
       'rxjs':                      'npm:rxjs',
-      'angular-in-memory-web-api': 'npm:angular-in-memory-web-api',
+      'angular-in-memory-web-api': 'npm:angular-in-memory-web-api/bundles/in-memory-web-api.umd.js' //had to replace this line with current line
     },
     // packages tells the System loader how to load when no filename and/or no extension
     packages: {
@@ -36,10 +36,10 @@
       },
       rxjs: {
         defaultExtension: 'js'
-      },
+ /*     },                              //had to erase this package in order to avoid Error 404
       'angular-in-memory-web-api': {
         main: './index.js',
-        defaultExtension: 'js'
+        defaultExtension: 'js'  */
       }
     }
   });
